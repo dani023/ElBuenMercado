@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedidos</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active border-right">
+          <a class="nav-link" href="index.html">Nosotros <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item border-right">
+          <a class="nav-link" href="#">Productos<span class="sr-only">(current)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="pedidos.html">Pedidos<span class="sr-only">(current)</a>
+        </li>
+      </ul>
+      
+  </nav>
+
+  
+    <div class="container d-flex align-items-center h-100">
+        <!-- h-100 es la clase en boostrap para subir la altura "h" height y el numero porcentual -->
+        <div class="shopping-cart">
+          <!-- Title -->
+          <div class="title">
+            Arma Tu Canasta
+          </div>
+
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'hojas')">Hojas </button>
+            <button class="tablinks" onclick="openTab(event, 'hortalizas')">Hortalizas </button>
+            <button class="tablinks" onclick="openTab(event, 'frutas')">Frutas</button>
+            <button class="tablinks" onclick="openTab(event, 'proteínas')">Proteínas</button>
+            <button class="tablinks" onclick="openTab(event, 'granos')">Granos</button>
+            <button class="tablinks" onclick="openTab(event, 'harinas')">Harinas</button>
+            <button class="tablinks" onclick="openTab(event, 'vinagres')">Vinagres </button>
+
+          </div>
+         
+            <!-- Hojas -->
+          <div class="hojas tabcontent" id="hojas">
+            <div class="item  ">         
+              <div class="image">
+                <img src="Assets/Imgs/acelga.jpg" alt="" />
+              </div>
+          
+              <div class="description">
+                <span>Acelga</span>
+                <span>Rollo</span>
+                
+              </div>
+          
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="Assets/Imgs/plus.jpg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="Assets/Imgs/minus.png" alt="" />
+                </button>
+              </div>
+          
+              <div class="total-price">₡666</div>
+            </div>
+          
+            <!-- Product #2 -->
+            <div class="item ">
+              <div class="image">
+                <img src="Assets/Imgs/apio.jpg" alt=""/>
+              </div>
+          
+              <div class="description">
+                <span>Apio</span>
+                <span>Rollo</span>
+                
+              </div>
+          
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="minus.svg" alt="" />
+                </button>
+              </div>
+          
+              <div class="total-price">₡666</div>
+            </div>
+          
+            <!-- Product #3 -->
+            <div class="item ">
+          
+              <div class="image">
+                <img src="Assets/Imgs/arugula.jpg" alt="" />
+              </div>
+          
+              <div class="description">
+                <span>Arúgula</span>
+                <span>Rollo</span>
+              
+              </div>
+          
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="minus.svg" alt="" />
+                </button>
+              </div>
+          
+              <div class="total-price">₡666</div>
+            </div>
+          <!-- Acá terminan las hojas -->
+          </div>
+          <!-- Hortalizas -->
+          <div class="hortalizas tabcontent" id="hortalizas">
+            <div class="item ">         
+              <div class="image">
+                <img src="Assets/Imgs/ajo.jpg" alt="" />
+              </div>
+          
+              <div class="description">
+                <span>Ajo</span>
+                <span>Kilo</span>
+                
+              </div>
+          
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="Assets/Imgs/plus.jpg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="Assets/Imgs/minus.png" alt="" />
+                </button>
+              </div>
+          
+              <div class="total-price">₡666</div>
+            </div>
+          
+            <!-- Product #2 -->
+            <div class="item ">
+              <div class="image">
+                <img src="Assets/Imgs/ayote.jpeg" alt=""/>
+              </div>
+          
+              <div class="description">
+                <span>Ayote</span>
+                <span>Kilo</span>
+                
+              </div>
+          
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="minus.svg" alt="" />
+                </button>
+              </div>
+          
+              <div class="total-price">₡666</div>
+            </div>
+          
+            <!-- Product #3 -->
+            <div class="item ">
+          
+              <div class="image">
+                <img src="Assets/Imgs/brocoli.jpg" alt="" />
+              </div>
+          
+              <div class="description">
+                <span>Brócoli</span>
+                <span>Kilo</span>
+              
+              </div>
+          
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="plus.svg" alt="" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="minus.svg" alt="" />
+                </button>
+              </div>
+          
+              <div class="total-price">₡666</div>
+            </div>
+          <!-- Acá terminan las hojas -->
+          </div>
+          
+        </div>
+        
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS/cart.js"></script>
+    <script src="JS/tabs.js"></script>
+</body>
+</html>
