@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pedidos</title>
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body> 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item  border-right">
+          <a class="nav-link" href="index.html">Nosotros <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active border-right">
+          <a class="nav-link" href="#">Productos<span class="sr-only">(current)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link "  href="pedidos.html">Ayuda<span class="sr-only">(current)</a>
+        </li>
+      </ul>
+      
+  </nav>
+
+    
+
+    <div class="container ">
+        <!-- h-100 es la clase en boostrap para subir la altura "h" height y el numero porcentual -->
+            <!-- Title -->
+        <div class="dropdown row row-carrito">
+          <div class=" title col-sm-7"><span> Lista de productos</span></div>
+          <div class=" title col-sm-5">
+            <p>Revisa tu pedido</p>
+            <button  onclick="showCart()" class="dropbtn dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img  class="bolso"src="Assets/Imgs/bolso.png" alt="" ></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="cartMenu">
+              
+            </div>
+          </div>
+        </div>
+          <div class=" row shopping-cart">
+            <div class="col-sm-4 tab" id="tabBackground">
+              <button class="tablinks2" onclick="openTab(event, 'hojas')" onclick="setImage('hojas')" id="hojas">Hojas </button>
+              <button class="tablinks2" onclick="openTab(event, 'hortalizas')" onclick="setImage('hortalizas')" id="hortalizas">Hortalizas </button>
+              <button class="tablinks2" onclick="openTab(event, 'tuberculos')" onclick="setImage('tuberculos')"id="tuberculos">Tuberculos </button>
+              <button class="tablinks2" onclick="openTab(event, 'frutas')" onclick="setImage('frutas')"id="frutas">Frutas</button>
+              <button class="tablinks2" onclick="openTab(event, 'huevos/hongos')" onclick="setImage('huevos')"id="huevos">Huevos/Hongos</button>
+              <button class="tablinks2" onclick="openTab(event, 'granos' ) " onclick="setImage('granos')"id="granos">Granos </button>
+              <button class="tablinks2" onclick="openTab(event, 'procesados')" onclick="setImage('procesados')"id="procesados">Procesados </button>
+              <!-- <button class="tablinks" onclick="openTab(event, 'harina')">Harinas </button>
+              <button class="tablinks" onclick="openTab(event, 'vinagres')">Vinagres </button> -->
+              
+            </div>
+            <div class="tabcontent col-sm-8 " id="content">
+              
+            </div>
+          
+
+          </div>
+            
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS/cart.js"></script>
+    <script src="JS/tabs.js"></script>
+</body>
+</html>
